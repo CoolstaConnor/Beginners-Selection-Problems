@@ -16,14 +16,23 @@ if BEGIN == "BEGIN":
         print("Finally, behind the third door is a murderer with a chainsaw.")
         door2 = int(input("Which murderer are you picking, 1, 2, or 3? (You will need to rerun the level if you do not pick 1, 2, or 3)"))
         if door2 == 1:
-            print(""You Died! You were stabbed by the murderer, rerun the level.")
+            print("You Died! You were stabbed by the murderer, rerun the level.")
         if door2 == 2:
-            print(""You Died! You were shot by the murderer hornets, rerun the level.")
+            print("You Died! You were shot by the murderer, rerun the level.")
         if door2 == 3:
             print("Good Choice Again! The chainsaw needed to be plugged in for it to work, but there were no plugs.")
-            print("You have a few more sets of 3 doors to get through, the next are liquids that have filled the room that will do the damage upon touching you.")
-            print("1st magma")
-            print("2nd nuclear waste")
-            print("3rd idk")
+            print("You have one more sets of doors to get through.")
+            print("Behind the next set of doors are liquids that you must drink half a litre of.")
+            print("The first door will cleanse you of any viruses, bleach.")
+            print("The second door may get you drunk, it showcases pure alcohol.")
+            print("And the third door has boiling water.")
+            door3 = int(input("Which dangerous liquid will you be choosing to drink, 1, 2, or 3?(You will need to rerun the level if you do not pick 1, 2, or 3)"))
+            if door3 == 1:
+                print("You Died! Bleach will clear out all toxins inside your body, including useful ones. Rerun the level.")
+            if door3 == 3:
+                print("You Died! Boiling water will burn you from the inside out, damaging and burning your limbs. Rerun the level.")
+            if door3 == 2:
+                print("Correct! Drinking pure alcohol is not safe, however you will LIKELY live after drinking it. Rerun the level.")
+                print("Well Done! You completed your quest, I almost forgot your reward. Your reward is surviving, great job!")
 else:
-    print("Rerun the level, and type 'BEGIN', it is case sensetive.")
+    print("Rerun the level, and type 'BEGIN' correctly to start the quest! It is case sensetive.")
